@@ -1,30 +1,5 @@
-#nav {
-  position: fixed;
-  top: 30px;
-  left: 50%;
-  width: 60%;
-  color: white;
-  transform: translate(-50%);
-  z-index:5000;
-}
-
-.navbar{
-  border-radius: 20px;
-}
-
-.navbar-nav{
-  float: none;
-  margin: 0 auto;
-  text-align: center;
-  font-size: 20px;
-}
-
-.navbar-nav > li {
-  display: inline-block;
-  float: none;
-  padding-top: 2%;
-  padding-left: 60px;
-  padding-right: 60px;
+.desc{
+    font-size: 1.5rem;
 }
 
 .image1{
@@ -40,11 +15,11 @@
 
 .image1 h1{
   font-family: Helvetica;
-  font-size: 150px;
+  font-size: 140px;
   left :50%;
   transform: translate(-50%);
-  padding-top: 21%;
-  padding-bottom: 21%;
+  padding-top: 23%;
+  padding-bottom: 23%;
   color: white;
   text-shadow: -2px 0 black, 0 2px black,2px 0 black, 0 -2px black;
   margin-bottom: 0px;
@@ -60,15 +35,20 @@
 
 }
 .apropos{
+  background-image: linear-gradient(to left, rgba(24,43,117,0.7), rgba(43,4,234,0.1));
   width: 40%;
   border: 3px solid;
+  padding-top: 1%;
   margin:  2% auto;
   margin-left: 15%;
   margin-right: 5%
 }
+.apropos p{
+  font-size: 30px;
+}
 .skills{
   width:100%;
-  margin:4% 20%;
+  margin:2% 20%;
   padding:  0% 1%;
   padding-bottom: 2%;
   border: 3px solid;
@@ -87,19 +67,15 @@
 }
 
 .page-projet{
-    width: 70%;
     display: flex;
     flex-wrap: wrap;
-    margin: 0 auto;
+    margin: 1% auto;
     justify-content: center;
     position: relative;
 }
 
 .page-projet  a{
     display: block;
-    width: 210px;
-    height: 295px;
-    margin: 5px;
     position: relative;
     color: white;
     overflow: hidden;
@@ -116,7 +92,7 @@
     font-size: 2.5rem;
 }
 
-.page-projet .nom-serie{
+.page-projet .nom-projet{
     font-weight: bold;
 }
 
@@ -135,7 +111,7 @@
 .real-over{
     position: absolute;
     /*background-image: linear-gradient(to right, rgba(255,88,172,0.7), rgba(231,36,37,0.8));*/
-    background-image: linear-gradient(to left, rgba(103,28,157,0.6), rgba(164,24,133,0.6));
+    background-image: linear-gradient(to left, rgba(24,43,117,0.6), rgba(43,4,234,0.6));
     top: 0;
     left: 0;
     width: 100%;
@@ -151,12 +127,19 @@
     opacity: 1;
     top: 0;
 }
-
-.real-over p{
-    margin: 10px 10px;
+.contact{
+  text-align:left;
+  text-justify: inter-word;
+  padding:2% 1%;
+}
+.lien{
+  padding:2% 1%;
+}
+.Copyright{
+  padding:4% ;
 }
 p{
-  font-size: 30px;
+  font-size: 20px;
   margin-bottom: 0px;
 }
 body {
@@ -173,7 +156,7 @@ h2{
   position:relative;
   left: 50%;
   transform: translate(-50%);
-  padding-top:0.5%;
+  padding-top:1%;
   width: 650px;
   height: 106px;
   margin-bottom: 50px;

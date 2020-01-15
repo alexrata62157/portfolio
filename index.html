@@ -7,11 +7,34 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/navbar.css">
+
   </head>
   <body>
     <div class="container-fuild">
+
       <!-- Navbar  -->
-      <div id="nav">
+      <nav class="nav">
+        <div class="container">
+            <div class="logo">
+                <a href="#"><img src="Image/logo.png" width="60px" height="60px"></a>
+            </div>
+            <div id="mainListDiv" class="main_list">
+                <ul class="navlinks">
+                    <li><a href="#">Accueil</a></li>
+                    <li><a href="#apropos">A propos</a></li>
+                    <li><a href="#competence">Compétences</a></li>
+                    <li><a href="#projet">Projets</a></li>
+                </ul>
+            </div>
+            <span class="navTrigger">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
+        </div>
+      </nav>
+      <!--<div id="nav">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -19,12 +42,12 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
               <li class="nav-item active ">
-                <a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="#">ACCUEIL <span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#apropos">À PROPOS</a>
+                <a class="nav-link" href="#apropos">MOI</a>
               </li>
-              <img src="Image/logo.png" width="100px" height="100px">
+              <img src="Image/logo.png" width="80px" height="80px">
               <li class="nav-item">
                 <a class="nav-link" href="#competence">COMPÉTENCES</a>
               </li>
@@ -34,7 +57,7 @@
             </ul>
           </div>
         </nav>
-      </div>
+      </div>-->
 
       <!--Home-->
       <div class="image1 row">
@@ -48,10 +71,10 @@
 
       <!--A propos-->
       <div class="row "id="apropos">
-        <h2>A propos</h2>
+        <h2>Moi</h2>
         <div class="row">
           <div class="apropos col">
-            <p>Je suis actuellement en étude en DUT informatique à L'IUT de Lens. J'ai fais un baccalauréat Scientifique option ISN (Informatique et Science du Numérique). Je suis très intéressé par l'informatique, cet univers m'attire depuis que je suis petit, je passe la plupart de mon temps sur mon pc.      </p>
+            <p>Je suis actuellement en étude en DUT informatique à L'IUT de Lens. J'ai fait un baccalauréat Scientifique option ISN (Informatique et Science du Numérique). Je suis très intéressé par l'informatique, cet univers m'attire depuis que je suis petit, je passe la plupart de mon temps sur mon pc.</p>
           </div>
           <div class="photo col">
             <img src="Image/logo.png" width="400px" height="400px">
@@ -125,35 +148,62 @@
         <h2>Projets</h2>
         <div class="row">
           <div class="col projet page-projet">
-            <!--<a href="">-->
+            <a href="https://github.com/">
             <img src="Image/projet1.png" width="600px" height="400px">
             <div class="real-over">
                 <p class="nom-projet">Refonte du site de l'IUT</p>
                 <p class="note">HTML/CSS/JS</p>
-            </div>
+                <p class="desc">Dans ce projet, nous devions re-designer le site de l'IUT informatique de lens. Nous avons donc choisit un design qui correspond aux sites recents. Nous avons travailler dessus tout au long du semestre dès l'annonce du projet. </p>
+            </div></a>
           </div>
-          <div class="col projet">
+          <div class="col projet page-projet">
+            <a href="https://github.com/alexrata62157/ProjetBomberman">
             <img src="Image/projet2.png" width="600px" height="400px">
+            <div class="real-over">
+                <p class="nom-projet">Projet BomberMan</p>
+                <p class="note">PYQT</p>
+                <p class="desc">Dans ce projet, nous avons du créer un jeu Bomberman en python à l'aide de la librairie QT. Comme pour le premier projet, nous avons travaillé dessus dès l'annonce du projet, tout le long du semestre. C'était un projet assez difficile car en plus de sa grandeure, nous ne connaissions pratiquement rien de cette librairie. </p>
+            </div></a>
           </div>
-          <div class="col projet">
+          <div class="col projet page-projet">
+            <a href="https://github.com/alexrata62157/ProjetMarathon">
             <img src="Image/projet3.png" width="600px" height="400px">
+            <div class="real-over">
+                <p class="nom-projet">Marathon Web</p>
+                <p class="note">HTML/CSS/JS/PHP</p>
+                <p class="desc">Dans ce projet, nous avons créer un site ressourçant plusieurs séries/épisodes, avec différentes fonctionnalitées. Nous étions un groupe de 7, 3 infos qui géré principalement le code(PHP), et 4 MMI chargé du design et de la partie COM. Ce projet s'est déroulé sur un peu moins de 48 heures.</p>
+            </div></a>
           </div>
-        </div>
-        <div class="row">
-          <div class="col align-self-center projet">
+          <div class="col projet page-projet">
+            <a href="https://github.com/alexrata62157/portfolio">
             <img src="Image/projetbis.png" width="600px" height="400px">
+            <div class="real-over">
+                <p class="nom-projet">Portfolio</p>
+                <p class="note">HTML/CSS/JS</p>
+            </div></a>
           </div>
         </div>
       </div>
-
       <!--Footer-->
       <footer>
-        <div>
-          <p>Tous droits réservés.</p>
-        </div>
-        <!--Copyright-->
-        <div>
-          <p>© 2018 Copyright: Ratajczak Alexandre</p>
+        <!--Contact-->
+        <div class="row ">
+          <div class="col-3 contact">
+            <h3>Contact:</h3>
+            <p>Tel: 06-74-79-40-15</p>
+            <p>Mail: alexandre.ratajczak.pro@gmail.com</p>
+            <p>Res: 12 résidence d'alincourt, Allouagne</p>
+          </div>
+          <div class="col-6 Copyright" >
+            <p>Tous droits réservés.</p>
+            <p>© 2019 Copyright: Ratajczak Alexandre</p>
+          </div>
+          <div class="col-3 lien">
+            <h3>Lien:</h3>
+            <p><a href="https://github.com/">Linkedin</a></p>
+            <p><a href="https://github.com/alexrata62157/">Github</a></p>
+            <p><a href="https://github.com/alexrata62157/CV">CV</a></p>
+          </div>
         </div>
       </footer>
     </div>
@@ -161,5 +211,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="js/navbar.js"></script>
+
   </body>
 </html>
